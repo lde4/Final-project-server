@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lmap - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Lmap Dashboard</h1>
+            <p>Server-Side User Management System</p>
+        </header>
+
+        <div class="controls-bar">
+            <span class="controls-title">Sort Users By:</span>
+            <button class="sort-btn" id="sortByUserBtn">Username (A-Z)</button>
+            <button class="sort-btn" id="sortByDateBtn">Last Login (Newest)</button>
+        </div>
+
+        <div class="table-responsive">
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email Address</th>
+                        <th>Password (Encrypted)</th>
+                        <th>Admin Status</th>
+                        <th>Last Login Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- השורות יוזרקו לכאן על ידי ה-JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="admin-script.js"></script>
+</body>
+</html>
